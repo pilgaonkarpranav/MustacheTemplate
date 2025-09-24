@@ -38,6 +38,18 @@ const helpers = {
       return -1;
     }
   },
+  divideFloat: function (x, y) {
+    if (typeof x === 'number' && typeof y === 'number' && y !== 0) {
+      return parseFloat(x / y);
+    }
+    return -1;
+  },
+  multiply: function (x, y) {
+    if (typeof x === 'number' && typeof y === 'number') {
+      return x * y;
+    }
+    return -1;
+  },
   add: function (x, y) {
     if (typeof x === 'number' && typeof y === 'number') {
       return x + y;
